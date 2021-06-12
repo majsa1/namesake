@@ -65,6 +65,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		86031D70267508DB00477397 /* CoreDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				8613C86F266F876300786F57 /* Person+CoreDataClass.swift */,
+				8613C870266F876300786F57 /* Person+CoreDataProperties.swift */,
+				8613C863266F869E00786F57 /* Location+CoreDataClass.swift */,
+				8613C864266F869E00786F57 /* Location+CoreDataProperties.swift */,
+				8613C85A266F85C000786F57 /* Namesake.xcdatamodeld */,
+			);
+			path = CoreDataModel;
+			sourceTree = "<group>";
+		};
 		8613C843266F85C000786F57 = {
 			isa = PBXGroup;
 			children = (
@@ -84,10 +96,7 @@
 		8613C84E266F85C000786F57 /* Namesake */ = {
 			isa = PBXGroup;
 			children = (
-				8613C86F266F876300786F57 /* Person+CoreDataClass.swift */,
-				8613C870266F876300786F57 /* Person+CoreDataProperties.swift */,
-				8613C863266F869E00786F57 /* Location+CoreDataClass.swift */,
-				8613C864266F869E00786F57 /* Location+CoreDataProperties.swift */,
+				86031D70267508DB00477397 /* CoreDataModel */,
 				86B671BA26720CF80052CCE8 /* Views */,
 				8613C84F266F85C000786F57 /* NamesakeApp.swift */,
 				8613C851266F85C000786F57 /* ContentView.swift */,
@@ -101,7 +110,6 @@
 				8613C853266F85C000786F57 /* Assets.xcassets */,
 				8613C858266F85C000786F57 /* Persistence.swift */,
 				8613C85D266F85C000786F57 /* Info.plist */,
-				8613C85A266F85C000786F57 /* Namesake.xcdatamodeld */,
 				8613C855266F85C000786F57 /* Preview Content */,
 			);
 			path = Namesake;
