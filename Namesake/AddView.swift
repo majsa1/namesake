@@ -29,6 +29,7 @@ struct AddView: View {
     
     @State private var showingImagePicker = true
     @State private var showingLocationText = false
+    @State private var showingAlert = false
     
     let locationFetcher = LocationFetcher()
     @State private var location = "Unknown"
@@ -83,7 +84,6 @@ struct AddView: View {
                 ToolbarItem(placement: .navigationBarTrailing, content: {
                     Button("Save") {
                         addPerson()
-                        presentationMode.wrappedValue.dismiss()
                     }
                 })
                 ToolbarItem(placement: .navigationBarLeading, content: {
@@ -92,14 +92,22 @@ struct AddView: View {
                     }
                 })
             }
+            .alert(isPresented: $showingAlert) {
+                Alert(title: Text("Details missing"), message: Text("Please fill in all details"), dismissButton: .default(Text("OK")))
+            }
         }
     }
     
     func addPerson() {
+        guard !firstName.isEmpty || !lastName.isEmpty else {
+            showingAlert = true
+            return
+        }
+        
         let newPerson = Person(context: viewContext)
-        newPerson.firstName = firstName
-        newPerson.lastName = lastName
-        newPerson.notes = notes
+        newPerson.firstName = firstName.trimmingCharacters(in: .whitespacesAndNewlines)
+        newPerson.lastName = lastName.trimmingCharacters(in: .whitespacesAndNewlines)
+        newPerson.notes = notes.trimmingCharacters(in: .whitespacesAndNewlines)
         newPerson.id = UUID().uuidString
         newPerson.date = Date()
         newPerson.latitude = centerCoordinate.latitude
@@ -119,6 +127,7 @@ struct AddView: View {
         } catch {
             print("Unable to add person with id \(newPerson.unwrappedId)")
         }
+        presentationMode.wrappedValue.dismiss()
     }
 }
 

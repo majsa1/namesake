@@ -96,19 +96,17 @@
 		8613C84E266F85C000786F57 /* Namesake */ = {
 			isa = PBXGroup;
 			children = (
+				8613C84F266F85C000786F57 /* NamesakeApp.swift */,
+				8613C858266F85C000786F57 /* Persistence.swift */,
 				86031D70267508DB00477397 /* CoreDataModel */,
 				86B671BA26720CF80052CCE8 /* Views */,
-				8613C84F266F85C000786F57 /* NamesakeApp.swift */,
 				8613C851266F85C000786F57 /* ContentView.swift */,
 				8613C875266F889C00786F57 /* DetailView.swift */,
 				8613C877266F88B600786F57 /* AddView.swift */,
 				8613C879266F88DC00786F57 /* EditView.swift */,
-				8613C873266F886900786F57 /* MapView.swift */,
 				8613C87D266F891C00786F57 /* LocationFetcher.swift */,
-				8613C87F266F893C00786F57 /* ImagePicker.swift */,
 				8613C881266F895400786F57 /* ImageHandler.swift */,
 				8613C853266F85C000786F57 /* Assets.xcassets */,
-				8613C858266F85C000786F57 /* Persistence.swift */,
 				8613C85D266F85C000786F57 /* Info.plist */,
 				8613C855266F85C000786F57 /* Preview Content */,
 			);
@@ -129,6 +127,8 @@
 				86B671B62672047F0052CCE8 /* RowContent.swift */,
 				86B671B826720C470052CCE8 /* EditImage.swift */,
 				8613C87B266F88FE00786F57 /* ClearButton.swift */,
+				8613C873266F886900786F57 /* MapView.swift */,
+				8613C87F266F893C00786F57 /* ImagePicker.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

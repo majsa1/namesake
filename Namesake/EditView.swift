@@ -109,9 +109,9 @@ struct EditView: View {
     }
     
     func editPerson() {
-        person.firstName = firstName
-        person.lastName = lastName
-        person.notes = notes
+        person.firstName = firstName.trimmingCharacters(in: .whitespacesAndNewlines)
+        person.lastName = lastName.trimmingCharacters(in: .whitespacesAndNewlines)
+        person.notes = notes.trimmingCharacters(in: .whitespacesAndNewlines)
         person.latitude = centerCoordinate.latitude
         person.longitude = centerCoordinate.longitude
         
