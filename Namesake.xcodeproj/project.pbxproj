@@ -19,12 +19,11 @@
 		8613C872266F876300786F57 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8613C870266F876300786F57 /* Person+CoreDataProperties.swift */; };
 		8613C874266F886900786F57 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8613C873266F886900786F57 /* MapView.swift */; };
 		8613C876266F889C00786F57 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8613C875266F889C00786F57 /* DetailView.swift */; };
-		8613C878266F88B600786F57 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8613C877266F88B600786F57 /* AddView.swift */; };
-		8613C87A266F88DC00786F57 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8613C879266F88DC00786F57 /* EditView.swift */; };
 		8613C87C266F88FE00786F57 /* ClearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8613C87B266F88FE00786F57 /* ClearButton.swift */; };
 		8613C87E266F891C00786F57 /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8613C87D266F891C00786F57 /* LocationFetcher.swift */; };
 		8613C880266F893C00786F57 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8613C87F266F893C00786F57 /* ImagePicker.swift */; };
 		8613C882266F895400786F57 /* ImageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8613C881266F895400786F57 /* ImageHandler.swift */; };
+		861C47B726789D2E00D14011 /* AddEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861C47B626789D2E00D14011 /* AddEditView.swift */; };
 		86B671B72672047F0052CCE8 /* RowContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B671B62672047F0052CCE8 /* RowContent.swift */; };
 		86B671B926720C470052CCE8 /* EditImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B671B826720C470052CCE8 /* EditImage.swift */; };
 /* End PBXBuildFile section */
@@ -44,12 +43,11 @@
 		8613C870266F876300786F57 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8613C873266F886900786F57 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		8613C875266F889C00786F57 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
-		8613C877266F88B600786F57 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
-		8613C879266F88DC00786F57 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		8613C87B266F88FE00786F57 /* ClearButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearButton.swift; sourceTree = "<group>"; };
 		8613C87D266F891C00786F57 /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
 		8613C87F266F893C00786F57 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		8613C881266F895400786F57 /* ImageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHandler.swift; sourceTree = "<group>"; };
+		861C47B626789D2E00D14011 /* AddEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditView.swift; sourceTree = "<group>"; };
 		86B671B62672047F0052CCE8 /* RowContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowContent.swift; sourceTree = "<group>"; };
 		86B671B826720C470052CCE8 /* EditImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,8 +100,7 @@
 				86B671BA26720CF80052CCE8 /* Views */,
 				8613C851266F85C000786F57 /* ContentView.swift */,
 				8613C875266F889C00786F57 /* DetailView.swift */,
-				8613C877266F88B600786F57 /* AddView.swift */,
-				8613C879266F88DC00786F57 /* EditView.swift */,
+				861C47B626789D2E00D14011 /* AddEditView.swift */,
 				8613C87D266F891C00786F57 /* LocationFetcher.swift */,
 				8613C881266F895400786F57 /* ImageHandler.swift */,
 				8613C853266F85C000786F57 /* Assets.xcassets */,
@@ -205,13 +202,12 @@
 				8613C859266F85C000786F57 /* Persistence.swift in Sources */,
 				86B671B72672047F0052CCE8 /* RowContent.swift in Sources */,
 				8613C871266F876300786F57 /* Person+CoreDataClass.swift in Sources */,
-				8613C87A266F88DC00786F57 /* EditView.swift in Sources */,
 				8613C852266F85C000786F57 /* ContentView.swift in Sources */,
 				8613C876266F889C00786F57 /* DetailView.swift in Sources */,
+				861C47B726789D2E00D14011 /* AddEditView.swift in Sources */,
 				8613C868266F869E00786F57 /* Location+CoreDataProperties.swift in Sources */,
 				86B671B926720C470052CCE8 /* EditImage.swift in Sources */,
 				8613C872266F876300786F57 /* Person+CoreDataProperties.swift in Sources */,
-				8613C878266F88B600786F57 /* AddView.swift in Sources */,
 				8613C85C266F85C000786F57 /* Namesake.xcdatamodeld in Sources */,
 				8613C87C266F88FE00786F57 /* ClearButton.swift in Sources */,
 				8613C87E266F891C00786F57 /* LocationFetcher.swift in Sources */,

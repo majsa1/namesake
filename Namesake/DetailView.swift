@@ -90,8 +90,11 @@ struct DetailView: View {
         }
         .onAppear(perform: getMap)
         
-        .sheet(isPresented: $showingEditView, onDismiss: getMap) {
-            EditView(person: person, image: $image)
+        .sheet(isPresented: $showingEditView, onDismiss: {
+                getMap()
+                image = imageHandler.loadImage(for: person)
+        }) {
+            AddEditView(filter: .edit, person: person, image: image)
                 .environment(\.managedObjectContext, viewContext)
         }
         .toolbar {

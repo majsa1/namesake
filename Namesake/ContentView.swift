@@ -56,7 +56,7 @@ struct ContentView: View {
                 }
             }
             .sheet(isPresented: $showingAddView) {
-                AddView()
+                AddEditView(filter: .add, person: nil, image: nil)
                     .environment(\.managedObjectContext, viewContext)
             }
         }

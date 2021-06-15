@@ -27,7 +27,6 @@ class ImageHandler {
         do {
             let loaded = try Data(contentsOf: filename)
             if let outputImage = UIImage(data: loaded) {
-                print("Image loaded successfully")
                 return Image(uiImage: outputImage)
             }
         } catch {
@@ -41,7 +40,6 @@ class ImageHandler {
         
         if let data = inputImage?.jpegData(compressionQuality: 0.8) {
             try? data.write(to: filename, options: [.atomicWrite, .completeFileProtection])
-            print("Successfully saved image")
         } else {
             print("Failed to save image")
         }
@@ -51,7 +49,6 @@ class ImageHandler {
         let filename = getDocumentsDirectory().appendingPathComponent(person.unwrappedId)
         
         if let _ = try? FileManager.default.removeItem(at: filename) {
-            print("Successfully deleted image with id \(person.unwrappedId)")
         } else {
             print("Unable to delete image")
         }
