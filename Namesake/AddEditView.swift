@@ -165,13 +165,9 @@ struct AddEditView: View {
         newPerson.latitude = centerCoordinate.latitude
         newPerson.longitude = centerCoordinate.longitude
         
-        if let existingLocation = locations.first(where: { $0.name == location }) {
-            existingLocation.addToPeople(newPerson)
-        } else {
-            let newLocation = Location(context: viewContext)
-            newLocation.name = location
-            newLocation.addToPeople(newPerson)
-        }
+        let newLocation = Location(context: viewContext)
+        newLocation.name = location
+        newLocation.addToPeople(newPerson)
         
         save(newPerson)
     }
@@ -192,13 +188,9 @@ struct AddEditView: View {
             if let place = person.location {
                 place.removeFromPeople(person)
              
-                if let existingLocation = locations.first(where: { $0.name == location }) {
-                    existingLocation.addToPeople(person)
-                } else {
-                    let newLocation = Location(context: viewContext)
-                    newLocation.name = location
-                    newLocation.addToPeople(person)
-                }
+                let newLocation = Location(context: viewContext)
+                newLocation.name = location
+                newLocation.addToPeople(person)
                 
                 if place.personArray.count == 0 {
                     viewContext.delete(place)
